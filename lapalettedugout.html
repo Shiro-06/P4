@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>La palette du goût</title>
+    <title>À la française</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
@@ -12,67 +12,116 @@
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="restaurantmenu.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/3342222011.js" crossorigin="anonymous"></script>
 </head>
-<header>
-    <img src="images/logo/ohmyfood.png">
-</header>
 
-<img src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg">
-La palette du goût
-
-Entrées
-Fricassée d'escargots
-Au piment d'Espelette
-25€
-
-Foie gras de canard mi-cuit
-Et ses copeaux de truffe noire
-35€
-
-Œuf au plat
-Assaisonné à la truffe sur lit de caviar
-20€
-
-
-Plats
-Filet de bœuf aux herbes
-Accompagné de sa ribambelle de légumes
-40€
-
-Parmentier de queue de bœuf
-À la truffe noire sur sa purée de panais
-35€
-
-Filet de turbot
-Aux agrumes
-44€
-
-Desserts
-Paris-Brest
-Revisité
-18€
-
-Macaron au chocolat d'exception
-Et glace à la vanille de Madagascar
-22€
-
-Mousse au chocolat
-Au piment d'Espelette et à la truffe noire
-23€
-
-<button class="btn__rounded">Commander</button>
-
-<footer>
-    <img src="images/logo/ohmyfood@2x.svg">
-    <div class="">
-        <div class="">Proposer un restaurant
+<body>
+    <header>
+        <img class="omf__brand" src="images/logo/ohmyfood.png" alt="ohmyfood logo">
+        <div class="arrow__homepage">
+            <a href="index.html">
+                <i class="fa-solid fa-arrow-left fa-lg" style="color: #353535;"></i>
+            </a>
         </div>
-        <div class="">
-            Devenir partenaire
+
+    </header>
+
+    <img class="main__photo" src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="a la française">
+
+    <section class="section__menu">
+
+        <h1 class="restaurant__title">La palette du goût<i class="fa-regular fa-heart" style="color: #353535;"></i></h1>
+
+
+        <h2 class="menu__title">ENTRÉES</h2>
+
+        <a href="#"><article class="card__menu">
+            <h3 class="card__title"><strong>Fricassée d'escargots</strong></h3>
+            <div class="card__subtitle">Au piment d'espelette<strong>25€</strong></div>
+            <i class="fa-solid fa-circle-check" style="color: #ffffff;"></i>
+        </article></a>
+
+        <a href="#"><article class="card__menu">
+            <h3 class="card__title"><strong>Foie gras de canard mi-cuit</strong></h3>
+            <div class="card__subtitle">Et ses copeaux de truffe noire<strong>35€</strong></div>
+            <i class="fa-solid fa-circle-check" style="color: #ffffff;"></i>
+        </article></a>
+
+        <a href="#"><article class="card__menu">
+            <h3 class="card__title"><strong>Oeuf au plat</strong></h3>
+            <div class="card__subtitle">Assaisoné à la truffe sur lit de caviar<strong>20€</strong></div>
+            <i class="fa-solid fa-circle-check" style="color: #ffffff;"></i>
+        </article></a>
+
+        <h2 class="menu__title">PLATS</h2>
+
+        <a href="#"><article class="card__menu">
+            <h3 class="card__title"><strong>Filet de boeuf aux herbes</strong></h3>
+            <div class="card__subtitle">Accompagnées de sa ribambelle de légumes<strong>40€</strong></div>
+            <i class="fa-solid fa-circle-check" style="color: #ffffff;"></i>
+        </article></a>
+
+        <a href="#"><article class="card__menu">
+            <h3 class="card__title"><strong>Parmentier de queue de boeuf</strong></h3>
+            <div class="card__subtitle">À la truffe noire sur sa purée de panais<strong>35€</strong></div>
+            <i class="fa-solid fa-circle-check" style="color: #ffffff;"></i>
+        </article></a>
+
+        <a href="#"><article class="card__menu">
+            <h3 class="card__title"><strong>Filet de turbot</strong></h3>
+            <div class="card__subtitle">Aux agrumes<strong>44€</strong></div>
+            <i class="fa-solid fa-circle-check" style="color: #ffffff;"></i>
+        </article></a>
+
+        <h2 class="menu__title">DESSERTS</h2>
+
+        <a href="#"><article class="card__menu">
+            <h3 class="card__title"><strong>Paris-Brest</strong></h3>
+            <div class="card__subtitle">Revisité<strong>18€</strong></div>
+            <i class="fa-solid fa-circle-check" style="color: #ffffff;"></i>
+        </article></a>
+
+        <a href="#"><article class="card__menu">
+            <h3 class="card__title"><strong>Macaron au chocolat d'exception</strong></h3>
+            <div class="card__subtitle">Et glace à la vanille de Madagascar<strong>22€</strong></div>
+            <i class="fa-solid fa-circle-check" style="color: #ffffff;"></i>
+        </article></a>
+
+        <a href="#"><article class="card__menu">
+            <h3 class="card__title"><strong>Mousse au chocolat</strong></h3>
+            <div class="card__subtitle">Au piment d'espelette et à la truffe noire<strong>23€</strong></div>
+            <i class="fa-solid fa-circle-check" style="color: #ffffff;"></i>
+        </article></a>
+
+        <div class="menu__btn">
+            <button class="btn__rounded">Commander</button>
         </div>
-        <div class="">
-            Mentions légales
-            Contact
-        </div>
-</footer>
+    </section>
+ 
+    <footer>
+        <div class="omf__logo">Ohmyfood</div>
+        
+        <ul class="no-bullets">
+            <li>
+                <a href="#"><i class="fa-solid fa-utensils icon__fork" style="color: #ffffff;"></i>Proposer un restaurant </a> 
+            </li>
+
+            <li>
+                <a href="#"><i class="fa-solid fa-handshake-angle icon__handshake" style="color: #ffffff;"></i>Devenir partenaire</a>
+            </li>
+
+            <li>
+                <a href="#">Mentions légales</a>
+            </li>
+            <li>
+                <a href="mailto:adresse@serveur.com">Contact</a>
+            </li>
+        </ul>
+    </footer>
+</body>
+
+</html>

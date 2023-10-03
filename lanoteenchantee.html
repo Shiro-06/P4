@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>La note enchantée</title>
+    <title>À la française</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
@@ -12,69 +12,122 @@
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="restaurantmenu.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/3342222011.js" crossorigin="anonymous"></script>
 </head>
-<header>
-    <img src="images/logo/ohmyfood.png">
-</header>
 
-<img src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg">
-La note enchantée
-
-Entrées
-Ravioles de foie gras
-Accompagnées de leur crème à la truffe
-25€
-
-Caviar osciètre
-Sur blini à la farine de blé noir
-35€
-
-Homard et espuma de potiron
-Marinés aux zestes d'orange
-20€
-
-Foie gras de canard cuit entier
-Confiture de figue et pain toasté
-35€
-
-Plats
-Noix de coquilles Saint-Jacques
-Sur lit de purée de céleri-rave
-40€
-
-Langoustine poêlée
-Purée de patate douce
-35€
-
-Mijoté de queue de bœuf
-Et riz sauvage aux zestes de citron
-44€
-
-Desserts
-Macaron noisette et chocolat
-Glace au caramel brun et sel de Guérande
-18€
-
-Baba au rhum revisité
-Avec son coulis de citron
-22€
-
-Tarte au citron meringuée
-Déstructurée
-23€
-<button class="btn__rounded">Commander</button>
-
-<footer>
-    <img src="images/logo/ohmyfood@2x.svg">
-    <div class="">
-        <div class="">Proposer un restaurant
+<body>
+    <header>
+        <img class="omf__brand" src="images/logo/ohmyfood.png" alt="ohmyfood logo">
+        <div class="arrow__homepage">
+            <a href="index.html">
+                <i class="fa-solid fa-arrow-left fa-lg" style="color: #353535;"></i>
+            </a>
         </div>
-        <div class="">
-            Devenir partenaire
+
+    </header>
+
+    <img class="main__photo" src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="a la française">
+
+    <section class="section__menu">
+
+        <h1 class="restaurant__title">La note enchantée<i class="fa-regular fa-heart" style="color: #353535;"></i></h1>
+
+
+        <h2 class="menu__title">ENTRÉES</h2>
+
+        <a href="#"><article class="card__menu">
+            <h3 class="card__title"><strong>Ravioles de foie gras</strong></h3>
+            <div class="card__subtitle">Accompagnées de leur crème à la truffe<strong>25€</strong></div>
+            <i class="fa-solid fa-circle-check" style="color: #ffffff;"></i>
+        </article></a>
+
+        <a href="#"><article class="card__menu">
+            <h3 class="card__title"><strong>Caviar osciètre</strong></h3>
+            <div class="card__subtitle">Sur blini à la farine de blé noir<strong>35€</strong></div>
+            <i class="fa-solid fa-circle-check" style="color: #ffffff;"></i>
+        </article></a>
+
+        <a href="#"><article class="card__menu">
+            <h3 class="card__title"><strong>Homard et espuma de potiron</strong></h3>
+            <div class="card__subtitle">Marinés aux zestes d'orange<strong>20€</strong></div>
+            <i class="fa-solid fa-circle-check" style="color: #ffffff;"></i>
+        </article></a>
+
+        <a href="#"><article class="card__menu">
+            <h3 class="card__title"><strong>Foie gras de canard cuit entier</strong></h3>
+            <div class="card__subtitle">Confiture de figue et pain toasté<strong>35€</strong></div>
+            <i class="fa-solid fa-circle-check" style="color: #ffffff;"></i>
+        </article></a>
+
+        <h2 class="menu__title">PLATS</h2>
+
+        <a href="#"><article class="card__menu">
+            <h3 class="card__title"><strong>Noix de coquilles Saint-Jacques</strong></h3>
+            <div class="card__subtitle">Sur lit de purée de céleri-rave<strong>40€</strong></div>
+            <i class="fa-solid fa-circle-check" style="color: #ffffff;"></i>
+        </article></a>
+
+        <a href="#"><article class="card__menu">
+            <h3 class="card__title"><strong>Langoustine poêlée</strong></h3>
+            <div class="card__subtitle">Purée de patate douce<strong>35€</strong></div>
+            <i class="fa-solid fa-circle-check" style="color: #ffffff;"></i>
+        </article></a>
+
+        <a href="#"><article class="card__menu">
+            <h3 class="card__title"><strong>Mijoté de queue de boeuf</strong></h3>
+            <div class="card__subtitle">Et riz sauvage aux zestes de citron<strong>45€</strong></div>
+            <i class="fa-solid fa-circle-check" style="color: #ffffff;"></i>
+        </article></a>
+
+        <h2 class="menu__title">DESSERTS</h2>
+
+        <a href="#"><article class="card__menu">
+            <h3 class="card__title"><strong>Macaron noisette et chocolat</strong></h3>
+            <div class="card__subtitle">Glace au caramel brun et sel de Guérande<strong>18€</strong></div>
+            <i class="fa-solid fa-circle-check" style="color: #ffffff;"></i>
+        </article></a>
+
+        <a href="#"><article class="card__menu">
+            <h3 class="card__title"><strong>Baba au rhum revisité</strong></h3>
+            <div class="card__subtitle">Avec son coulis de citron<strong>22€</strong></div>
+            <i class="fa-solid fa-circle-check" style="color: #ffffff;"></i>
+        </article></a>
+
+        <a href="#"><article class="card__menu">
+            <h3 class="card__title"><strong>Tarte au citron meringuée</strong></h3>
+            <div class="card__subtitle">Déstructurée<strong>23€</strong></div>
+            <i class="fa-solid fa-circle-check" style="color: #ffffff;"></i>
+        </article></a>
+
+        <div class="menu__btn">
+            <button class="btn__rounded">Commander</button>
         </div>
-        <div class="">
-            Mentions légales
-            Contact
-        </div>
-</footer>
+    </section>
+
+    <footer>
+        <div class="omf__logo">Ohmyfood</div>
+        
+        <ul class="no-bullets">
+            <li>
+                <a href="#"><i class="fa-solid fa-utensils icon__fork" style="color: #ffffff;"></i>Proposer un restaurant </a> 
+            </li>
+
+            <li>
+                <a href="#"><i class="fa-solid fa-handshake-angle icon__handshake" style="color: #ffffff;"></i>Devenir partenaire</a>
+            </li>
+
+            <li>
+                <a href="#">Mentions légales</a>
+            </li>
+            <li>
+                <a href="mailto:adresse@serveur.com">Contact</a>
+            </li>
+        </ul>
+    </footer>
+</body>
+
+</html>

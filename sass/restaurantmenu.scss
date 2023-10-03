@@ -12,19 +12,20 @@ a {
 
 .omf__brand {
     padding: 16px 89px 16px 85px;
-
 }
 
 .arrow__homepage {
     padding-left: 17px;
     position: absolute;
     top: 27px;
-
+    left: 5px;
 }
 
 .main__photo {
     height: 275px;
     width: 100%;
+    background-image: url(images/logo/ohmyfood.png) ;
+    
 }
 
 .section__menu {
@@ -44,6 +45,7 @@ a {
     width: 12%;
     font-size: 16px;
     font-weight: 300;
+    margin-top: 40px;
 }
 
 
@@ -72,6 +74,12 @@ button {
     }
 }
 
+.menu__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+}
 
 // CARDS //
 .card__menu {
@@ -82,11 +90,13 @@ button {
     margin-top: 12px;
     padding: 11px;
     height: 45px;
+
 }
 
 .card__title {
     font-size: 18px;
     font-weight: 500;
+    margin: 0;
 }
 
 .card__subtitle {
