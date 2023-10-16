@@ -41,24 +41,21 @@ header {
   padding-top: 30px;
   position: relative;
   top: -50px;
+  margin-bottom: -50px;
 }
 @media screen and (min-width: 1024px) {
   .section__menu {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    padding-left: 100px;
-    padding-right: 100px;
-    margin-left: 200px;
-    margin-right: 200px;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) {
   .section__menu {
-    padding-left: 50px;
-    padding-right: 50px;
-    margin-left: 100px;
-    margin-right: 100px;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-left: 15%;
+    margin-right: 15%;
   }
 }
 
@@ -132,9 +129,9 @@ button {
 }
 .btn__rounded:hover {
   opacity: 0.7;
-  transform: scale(1.05);
+  transform: scale(1.03);
   background: linear-gradient(to bottom, #ff93e1, #a16be0 80%);
-  box-shadow: 5px 5px 5px black;
+  box-shadow: 0px 5px 11px 0px rgb(0, 0, 0);
 }
 
 .menu__btn {
@@ -145,39 +142,38 @@ button {
 }
 
 .card__menu {
+  display: flex;
   background-color: white;
   border-radius: 15px;
   box-shadow: 0px 4.01149px 15.0431px 0px rgba(0, 0, 0, 0.1);
   text-overflow: ellipsis;
   margin-top: 12px;
-  padding: 11px;
-  height: 45px;
+  animation: appear 1s both;
+  overflow: hidden;
 }
 
-.card__title {
+.card__price {
   font-size: 18px;
   font-weight: 500;
   margin: 0;
-}
-
-.card__subtitle {
-  margin-bottom: 16px;
+  text-overflow: ellipsis;
   display: flex;
-  justify-content: space-between;
+  align-items: flex-end;
+  margin-left: auto;
+  padding: 0.625rem 1.5625rem 0.625rem 0.3125rem;
 }
 
-.meal__check {
+.card__check {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-right: -65px;
   width: 65px;
-  padding: 0 0.9375rem;
   background-color: #99E2D0;
   transition: margin-right 0.4s ease-in-out;
 }
 
-.meal__check::after {
+.card__check::after {
   content: "\f00c";
   font-family: "FontAwesome";
   padding: 0.3125rem;
@@ -187,13 +183,54 @@ button {
   background-color: #fff;
   transition: transform 0.4s ease-in-out;
 }
-.meal__check::after .meal:hover .meal__check {
+
+.card__menu:hover .card__check {
   margin-right: 0;
 }
-.meal__check::after .meal:hover .meal__check::after {
-  transform: rotate(360deg);
+
+.card__description {
+  white-space: nowrap;
+  overflow: hidden;
+  padding: 0.625rem;
+}
+.card__description h3 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 18px;
+}
+.card__description p {
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
+.main__menu__dessert,
+.main__menu__dish,
+.main__menu__starter {
+  animation: appear 1s both;
+}
+
+.main__menu__starter {
+  animation-delay: 500ms;
+}
+
+.main__menu__dish {
+  animation-delay: 1000ms;
+}
+
+.main__menu__dessert {
+  animation-delay: 1500ms;
+}
+
+@keyframes appear {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
 footer {
   background-color: #353535;
   color: white;
@@ -208,12 +245,12 @@ ul.no-bullets {
   margin: 0;
   gap: 5px;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
   ul.no-bullets {
     flex-direction: row;
     padding-right: 200px;
     justify-content: flex-end;
-    gap: 35px;
+    gap: 5%;
   }
 }
 
@@ -221,11 +258,13 @@ ul.no-bullets {
   font-family: "shrikhand", cursive;
   margin-bottom: 10px;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
   .omf__logo {
     display: flex;
     padding-right: 20px;
     justify-content: flex-end;
+    padding-top: 30px;
+    margin: 0;
   }
 }
 
