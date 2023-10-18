@@ -134,7 +134,7 @@ button {
     color: white;
     transition: background-color 250ms;
     padding: 16px 13px;
-    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
     width: 186px;
     display: flex;
     align-self: center;
@@ -144,10 +144,9 @@ button {
     transition: all 0.4s ease-in-out;
 
     &:hover {
-        opacity: 0.7;
         transform: scale(1.03);
-        background: linear-gradient(to bottom, #ff93e1, #a16be0 80%);
-        box-shadow: 0px 5px 11px 0px rgba(0, 0, 0, 1);
+        background: linear-gradient(to bottom, #ff93e1, #a16be0 85%);
+        box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
     }
 }
 
@@ -173,7 +172,7 @@ button {
 
 .card__price {
     font-size: 18px;
-    font-weight: 500;
+    font-weight: 700;
     margin: 0;
     text-overflow: ellipsis;
     display: flex;
@@ -209,19 +208,24 @@ button {
 
 .card__menu:hover .card__check {
     margin-right: 0;
-  }
+}
+
 .card__description {
     white-space: nowrap;
     overflow: hidden;
     padding: 0.625rem;
+
     & h3 {
         overflow: hidden;
         text-overflow: ellipsis;
         font-size: 18px;
+        margin: 5px;
     }
+
     & p {
         overflow: hidden;
         text-overflow: ellipsis;
+        margin: 5px;
     }
 }
 

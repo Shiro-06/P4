@@ -110,6 +110,18 @@ button {
   background: #F6f6f6;
   text-align: center;
 }
+.infos__section h1 {
+  padding: 0 60px;
+  font-size: 24px;
+}
+@media screen and (min-width: 768px) {
+  .infos__section h1 {
+    font-size: 40px;
+  }
+}
+.infos__section p {
+  padding: 0 50px;
+}
 
 .search__bar {
   display: flex;
@@ -144,10 +156,8 @@ button {
 @media screen and (min-width: 768px) {
   .btn__menu {
     width: 100%;
+    font-size: medium;
   }
-}
-.btn__menu i:hover {
-  color: #9356dc;
 }
 
 .btn__container {
@@ -159,7 +169,7 @@ button {
   .btn__container {
     flex-direction: row;
     justify-content: space-evenly;
-    gap: 0px;
+    gap: 10px;
   }
 }
 
@@ -198,10 +208,11 @@ button {
   color: transparent;
   transition: all 400ms;
 }
-.menu__icon:hover .menu__icon--full {
+
+.btn__menu:hover .menu__icon--full {
   opacity: 1;
 }
-.menu__icon:hover .menu__icon--empty {
+.btn__menu:hover .menu__icon--empty {
   opacity: 0;
 }
 
@@ -319,7 +330,7 @@ button {
   background: linear-gradient(#FF79DA, #9356dC);
   color: white;
   padding: 16px 13px;
-  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
   width: 186px;
   display: flex;
   align-self: center;
@@ -329,10 +340,9 @@ button {
   transition: all 0.4s ease-in-out;
 }
 .btn__rounded:hover {
-  opacity: 0.7;
   transform: scale(1.03);
-  background: linear-gradient(to bottom, #ff93e1, #a16be0 80%);
-  box-shadow: 0px 5px 11px 0px rgb(0, 0, 0);
+  background: linear-gradient(to bottom, #ff93e1, #a16be0 85%);
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
 }
 
 footer {
