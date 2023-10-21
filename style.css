@@ -316,7 +316,7 @@ button {
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
-  transition: all 400ms;
+  transition: all 1000ms;
 }
 .heart__icon:hover .heart__icon--full {
   opacity: 1;

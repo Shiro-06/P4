@@ -358,7 +358,7 @@ button {
         background-clip: text;
         -webkit-background-clip: text;
         color: transparent;
-        transition: all 400ms;
+        transition: all 1000ms;
     }
 
     &:hover &--full {
